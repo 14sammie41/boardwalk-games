@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 57.65px; /* Pushes the top of the page down to avoid the navbar */
 }
 
 h1,
