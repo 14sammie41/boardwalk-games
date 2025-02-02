@@ -170,11 +170,24 @@ h2 {
 
 /* Media Queries */
 
+/* Small devices (Mobile phones, 576px and up) */
+@media screen and (min-width: 576px) {
+/* Make Reserve game section look better on larger screens */
+    #reserve-game {
+        max-width: 540px;
+    }
+}
+
 /* Medium devices (Tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     /* Make all services cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
+    }
+
+    /* Make Reserve game section look better on larger screens */
+    #reserve-game {
+        max-width: 720px;
     }
 }
 
@@ -183,6 +196,11 @@ h2 {
     /* Make all services cards the same height for consistency */
     #services .card-body {
         min-height: auto;
+    }
+
+    /* Make Reserve game section look better on larger screens */
+    #reserve-game {
+        max-width: 960px;
     }
 }
 

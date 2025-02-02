@@ -84,7 +84,10 @@
               <a class="nav-link" href="index.html#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn custom-button-filled ms-lg-3" href="booking.html">Book now</a>
+              <a class="btn custom-button-filled ms-lg-3" href="booking.html"
+                >Book now</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -341,6 +344,59 @@
             </div>
           </div>
         </div>
+      </section>
+      <!-- Form to reserve a game -->
+      <section id="reserve-game" class="container-md section">
+        <div class="row justify-content-center">
+        <h2 class="text-center">Reserve a game</h2>
+        <p>
+          Reserve a board game for your next visit to Boardwalk Games. Pick your
+          challenge, and let the adventure begin! Fill out your details and
+          preferred game below, and we'll have it set aside for you when you
+          arrive.
+        </p>
+        <form action="success.html" method="GET">
+          <div class="row">
+          <div class="mb-3 col-xl-4">
+            <label for="full-name" class="form-label">Full name</label>
+            <input type="text" class="form-control required" id="full-name"/>
+          </div>
+          <div class="mb-3 col-xl-4">
+            <label for="phone" class="form-label">Phone number</label>
+            <input type="number" class="form-control required" id="phone" />
+          </div>
+          <div class="mb-3 col-xl-4">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control required" id="email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-xl-8">
+            <label for="game" class="form-label">Select game</label>
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected value="">Select game</option>
+              <option value="1">Galaxy Pioneers</option>
+              <option value="2">Mystic Wood</option>
+              <option value="3">Captain's Gambit</option>
+              <option value="4">Critter Quest</option>
+              <option value="5">Setters of Catan</option>
+              <option value="6">Monopoly</option>
+              <option value="7">Exploding Kittens</option>
+              <option value="8">Cluedo</option>
+            </select>
+          </div>
+          <div class="mb-3 col-xl-4">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control required" id="date" />
+          </div>
+        </div>
+          <div class="col-12 text-end">
+            <button type="submit" class="btn custom-button-outline">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
       </section>
     </main>
     <!-- Footer/contact section -->
